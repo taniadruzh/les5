@@ -3,13 +3,21 @@
  */
 public class Main {
     public static void main(String[] args) {
-        Student st = new Student("Vasia",true,false,17,"Kirova",75,180);
 
         Student [] studArray = new Student[20];
 
-        for (int i = 0; i < 20; i++)
+        Student st = new Student("Vasia",true,false,17,"Kirova",75,180);
+        Student st2 = new Student("Kolia",false,true,17,"Kirova",75,180);
+        Student st3 = new Student("Vitia",true,false,17,"Kirova",75,180);
+
+        studArray[0] = st;
+        studArray[1] = st2;
+        studArray[2] = st3;
+
+
+        for (int i = 3; i < 20; i++)
         {
-            Student stud = new Student("name" + i,true,false,17,"Kirova " + i,75,180);
+            Student stud = new Student("name" + i,true,false);
             studArray[i] = stud;
         }
         for (Student student : studArray) {

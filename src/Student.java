@@ -28,4 +28,10 @@ public class Student {
     public String getStudent() {
         return name + (isHungry ?" is hungry ": " is not hungry " ) + " and he" + (isHappy ?" is hhappy ": " is not happy " );
     }
+
+    public Student(String name, boolean isHungry, boolean isHappy) {
+        this.name = name;
+        this.isHungry = isHungry;
+        this.isHappy = isHappy;
+    }
 }
