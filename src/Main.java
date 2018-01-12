@@ -1,3 +1,6 @@
+import p1.Tc1;
+import p2.Tc2;
+
 /**
  * Created by java on 12.01.2018.
  */
@@ -23,5 +26,7 @@ public class Main {
         for (Student student : studArray) {
             System.out.println(student.getStudent());
         }
+        Tc1 tc1 = new Tc1();
+        Tc2 tc2 = new Tc2();
     }
 }
